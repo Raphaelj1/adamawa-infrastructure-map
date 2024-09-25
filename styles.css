@@ -1,0 +1,150 @@
+:root {
+	/* Primary Colors */
+	--primary-color: #2e7d32; /* Deep Green */
+	--accent-color: #009688; /* Cool Teal */
+
+	/* Background Colors */
+	--background-color: #fafafa; /* Neutral White */
+	--section-bg-color: #f5f5f5; /* Light Gray */
+	--header-footer-bg-color: #1b5e20; /* Dark Green */
+
+	/* Text Colors */
+	--primary-text-color: #212121; /* Dark Charcoal */
+	--secondary-text-color: #616161; /* Grayish Black */
+	--link-color: #0288d1; /* Teal Blue */
+
+	/* Button Colors */
+	--primary-btn-bg: #2e7d32;
+	--primary-btn-text: #ffffff;
+	--secondary-btn-bg: #009688;
+	--secondary-btn-text: #ffffff;
+	--outline-btn-border: #2e7d32;
+	--outline-btn-text: #2e7d32;
+
+	/* Shadows & Borders */
+	--shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+	--light-border: #e0e0e0;
+	--card-border: #bdbdbd;
+
+	/* Alert Colors */
+	--success-color: #388e3c;
+	--warning-color: #f57c00;
+	--error-color: #d32f2f;
+	--info-color: #1976d2;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	background-color: var(--background-color);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+		sans-serif;
+}
+
+footer {
+    padding: 24px;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+header {
+	/* background-color: var(--header-footer-bg-color); */
+	box-shadow: var(--shadow);
+}
+
+.logo img {
+	height: 48px;
+}
+
+nav {
+	text-align: center;
+	padding: 16px 48px 8px;
+}
+
+h1 {
+	color: var(--primary-color);
+}
+
+p {
+	color: var(--secondary-text-color);
+}
+
+main {
+    height: 480px;
+    /* background-color: var(--accent-color); */
+}
+
+.toungo-map {
+    display: flex;
+    gap: 24px;
+}
+
+.toungo-map-img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 16px 0;
+    text-align: center;
+}
+
+iframe {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+		padding: 0 16px;
+	}
+    h1 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    nav .desc {
+        display: none;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+    .toungo-map {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .toungo-map-img {
+        width: 100%;
+    }
+}
+
+
+
+
+
